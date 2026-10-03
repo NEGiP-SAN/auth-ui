@@ -8,7 +8,7 @@ body {
     background-color: #f3f4f6;
 }
 
-.signup-container {
+.auth-container {
     width: 400px;
     padding: 35px 40px;
 
@@ -65,14 +65,20 @@ input:focus {
     box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
 }
 
-.login-link {
-    color: #6b32c5;
+.auth-link {
+    color: #6d28d9;
     text-decoration: none;
 }
 
-.login-link:hover {
+.auth-link:hover {
     color: #40168a;
     text-decoration: underline;
+}
+
+.forgot-password {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 button {
@@ -92,16 +98,16 @@ button {
         transform 0.1s;
 }
 
-#create-account {
+#auth-button {
     background-color: #2563eb;
     color: white;
 }
 
-#create-account:hover {
+#auth-button:hover {
     background-color: #1d4ed8;
 }
 
-#create-account:active {
+#auth-button:active {
     background-color: #1e40af;
     transform: translateY(1px);
 }

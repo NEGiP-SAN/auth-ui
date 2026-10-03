@@ -5,17 +5,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
     <title>Login</title>
   </head>
 
   <body>
-    <main>
+    <main class="auth-container">
       <h1>Welcome Back</h1>
-      <p>Login to your account</p>
+
+      <p class="welcome-message">Login to your account</p>
 
       <form>
-        <div>
+        <div class="form-group">
           <label for="username">Username</label>
+
           <input
             type="text"
             id="username"
@@ -24,8 +33,9 @@
           />
         </div>
 
-        <div>
+        <div class="form-group">
           <label for="password">Password</label>
+
           <input
             type="password"
             id="password"
@@ -33,13 +43,15 @@
             placeholder="Enter your password"
           />
         </div>
-        <a href="#">Forgot Password?</a>
-        <button type="submit">Login</button>
+
+        <a class="auth-link forgot-password" href="#"> Forgot Password? </a>
+
+        <button type="submit" id="auth-button">Login</button>
       </form>
 
       <p>
         Don't have an account?
-        <a href="signup.html">Sign Up</a>
+        <a class="auth-link" href="signup.html">Sign Up</a>
       </p>
     </main>
   </body>
