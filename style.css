@@ -4,15 +4,33 @@
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Inter", Arial, sans-serif;
+    background-color: #f3f4f6;
 }
 
 .signup-container {
     width: 400px;
-    padding: 10px 30px;
-    border: 3px solid;
-    margin: 0px auto;
-    margin-top: 80px;
+    padding: 35px 40px;
+
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 20px;
+
+    margin: 0 auto;
+    margin-top: 50px;
+
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin: 0 0 28px;
+    font-size: 40px;
+    color: #111827;
+}
+.welcome-message {
+    margin: 0 0 22px;
+    font-size: 18px;
+    color: #4b5563;
 }
 
 .form-group {
@@ -22,15 +40,78 @@ body {
 label {
     display: block;
     margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #374151;
 }
 
 input {
     width: 100%;
-    padding: 10px;
+    padding: 10px 14px;
+
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+
+    font-size: 16px;
+
+    outline: none;
+    transition:
+        border-color 0.2s,
+        box-shadow 0.2s;
+}
+
+input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.login-link {
+    color: #6b32c5;
+    text-decoration: none;
+}
+
+.login-link:hover {
+    color: #40168a;
+    text-decoration: underline;
 }
 
 button {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
+
     margin-bottom: 10px;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 16px;
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s,
+        transform 0.1s;
+}
+
+#create-account {
+    background-color: #2563eb;
+    color: white;
+}
+
+#create-account:hover {
+    background-color: #1d4ed8;
+}
+
+#create-account:active {
+    background-color: #1e40af;
+    transform: translateY(1px);
+}
+
+#clear {
+    background-color: white;
+    border: 1px solid #d1d5db;
+    color: #374151;
+}
+
+#clear:hover {
+    background-color: #f3f4f6;
 }
